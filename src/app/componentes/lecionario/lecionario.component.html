@@ -25,17 +25,17 @@
 
 
 
-<div class="container" style="margin-top: 5rem;">
+<div class="container content" style="margin-top: 5rem;">
 
     @if(lecionario) {
     <div class="container">
         <div class="titulo d-flex align-items-center justify-content-center flex-column text-center">
-            <h5>
-                <strong>
-                    Lecionário Anglicano 
+            <h6>
+                <strong style="color: purple;">
+                    Lecionário Comum Revisado 
                 </strong>
-                <p>Ano C</p>
-            </h5>
+                <p>Ano C - {{conteudo.tempo}}</p>
+            </h6>
 
         </div>
 
@@ -88,11 +88,10 @@
         </div>
 
 
-        <button matRipple [matRippleColor]="color" class="btn btn-primary" (click)="formatarTexto()">
+        <button cdkDragBoundary=".content" matRipple cdkDrag [matRippleColor]="color" class="fab" (click)="formatarTexto()" title="Copiar" (cdkDragStarted)="onDragStart()" (cdkDragEnded)="onDragEnd()">
             <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="content_copy"></mat-icon>
-            copiar
-
         </button>
+
     </div>
 
     } @else {

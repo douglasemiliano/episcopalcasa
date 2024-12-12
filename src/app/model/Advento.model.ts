@@ -18,8 +18,14 @@ export class Texto {
     textos: Texto[]; // Lista de textos associados à data
   }
 
-  export class Advento{
+  export class ConteudoLecionario{
+    tempo: string
     lecionario: Lecionario[];
     oracoes: string[];
+  }
+
+  export class LecionarioComum {
+    ano: string;
+    conteudo: ConteudoLecionario
   }
   

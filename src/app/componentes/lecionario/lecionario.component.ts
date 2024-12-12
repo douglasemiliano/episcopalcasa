@@ -1,27 +1,26 @@
-import { Component, model, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgLabelTemplateDirective, NgOptionTemplateDirective, NgSelectComponent } from '@ng-select/ng-select';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { LecionarioService } from '../../services/lecionario.service';
-import { Advento, Lecionario } from '../../model/Advento.model';
+import { ConteudoLecionario, Lecionario, LecionarioComum } from '../../model/Advento.model';
 import { DatePipe } from '@angular/common';
 import {MatIconModule} from '@angular/material/icon';
 import {MatRippleModule} from '@angular/material/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { log } from 'console';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
 import {OverlayModule} from '@angular/cdk/overlay';
+import {CdkDrag} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-lecionario',
   standalone: true,
   imports: [ FormsModule, NgLabelTemplateDirective,
     NgOptionTemplateDirective,
-    NgSelectComponent, CommonModule, DatePipe, 
+    NgSelectComponent, CommonModule, DatePipe, CdkDrag,
     MatIconModule, MatRippleModule, MatCardModule, ReactiveFormsModule, MatDatepickerModule, MatFormFieldModule, MatInputModule, OverlayModule],
   templateUrl: './lecionario.component.html',
   providers: [provideNativeDateAdapter()],
@@ -29,6 +28,9 @@ import {OverlayModule} from '@angular/cdk/overlay';
 })
 export class LecionarioComponent implements OnInit {
   isOpen = false;
+
+  isDragging = false;
+
   dataSelecionada: any
 
   dataForm: FormControl = new FormControl();
@@ -36,7 +38,7 @@ export class LecionarioComponent implements OnInit {
 
   color: string;
 
-  advento: Advento;
+  conteudo: ConteudoLecionario;
 
 
   anoLecionario: string = "Lecionário Anglicano Ano C"
@@ -83,13 +85,13 @@ export class LecionarioComponent implements OnInit {
 
   carregarLecionario(data: string){
     this.service.getLecionario().subscribe({
-      next: (dados: any) => {
+      next: (dados: LecionarioComum) => {
         this.lecionario = null;
         
         setTimeout(() => {
-          this.advento = dados.advento;
-          this.lecionario = (this.getByData(data, this.advento.lecionario));
-          this.oracao = dados.advento.oracoes[this.getWeekOfAdvent(data)]
+          this.conteudo = dados.conteudo;
+          this.lecionario = (this.getByData(data, this.conteudo.lecionario));
+          this.oracao = dados.conteudo.oracoes[this.getWeekOfAdvent(data)]
         }, 1500);
       
 
@@ -165,10 +167,7 @@ export class LecionarioComponent implements OnInit {
     
     
     navigator.clipboard.writeText(texto).then(() => {
-      console.log(texto);
-      this.enviarParaWhatsapp(texto)
-
-      alert('Texto copiado para a área de transferência!');
+      alert('Lecionário copiado para a área de transferência!');
     }).catch(err => {
       console.error('Erro ao copiar o texto: ', err);
     });
@@ -210,4 +209,12 @@ export class LecionarioComponent implements OnInit {
     this.carregarLecionario(this.dataSelecionada);
   }
 
+  onDragStart(){
+    this.isDragging = true;
+  }
+
+  onDragEnd(){
+    setTimeout(() => 
+      this.isDragging = false, 0);
+  }
 }

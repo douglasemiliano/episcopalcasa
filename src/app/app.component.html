@@ -9,22 +9,37 @@
   </div>
 
   <nav class="navbar fixed-bottom bg-light px-2 d-flex flex-row" aria-label="bottom">
-    <button class="btn btn" style="width: 33%;" (click)="setActiveButton('home')" (click)="goToHome()">
+    <button class="btn btn d-flex flex-column justify-content-center align-items-center" style="width: 33%;" (click)="setActiveButton('home')" (click)="goToHome()">
       <mat-icon [class.material-icons]="activeButton === 'home'"[class.material-icons-outlined]="activeButton !== 'home'" [style.color]="activeButton === 'home' ? 'purple' : 'black'">
         church
       </mat-icon>
+      <span style="font-size: smaller;" [style.color]="activeButton === 'home' ? 'purple' : 'black'">
+        <strong>
+          Início
+        </strong>
+      </span>
     </button>
   
-    <button class="btn btn" style="width: 33%;"(click)="setActiveButton('lecionario')" (click)="goToLecionario()">
+    <button class="btn btn d-flex flex-column justify-content-center align-items-center" style="width: 33%;"(click)="setActiveButton('lecionario')" (click)="goToLecionario()">
       <mat-icon [class.material-icons]="activeButton === 'lecionario'" [class.material-icons-outlined]="activeButton !== 'lecionario'" [style.color]="activeButton === 'lecionario' ? 'purple' : 'black'">
         article
       </mat-icon>
+      <span style="font-size: smaller;" [style.color]="activeButton === 'lecionario' ? 'purple' : 'black'">
+        <strong>
+          Lecionário
+        </strong>
+      </span>
     </button>
   
-    <button class="btn btn"  style="width: 33%;" (click)="setActiveButton('home2')" (click)="goToHome()">
+    <button class="btn btn d-flex flex-column justify-content-center align-items-center"  style="width: 33%;" (click)="setActiveButton('home2')" (click)="goToHome()">
       <mat-icon [class.material-icons]="activeButton === 'home2'" [class.material-icons-outlined]="activeButton !== 'home2'" [style.color]="activeButton === 'home2' ? 'purple' : 'black'">
         home
       </mat-icon>
+      <span style="font-size: smaller;" [style.color]="activeButton === 'home2' ? 'purple' : 'black'">
+        <strong>
+          Teste
+        </strong>
+      </span>
     </button>
   </nav>
   
