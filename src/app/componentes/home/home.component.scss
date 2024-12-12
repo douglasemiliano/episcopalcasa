@@ -1,0 +1,60 @@
+/* Cores personalizadas */
+.bg-gradient-primary {
+    background: linear-gradient(to right, #6a1b9a, #8e44ad);
+  }
+  
+  .text-primary {
+    color: #6a1b9a !important;
+  }
+  
+  .text-secondary {
+    color: #8e44ad !important;
+  }
+  
+  /* Estilos gerais */
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 12rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 1.5rem 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .mat-icon {
+    vertical-align: middle;
+  }
+
+  .culto{
+    background-image: url("/assets/culto.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+  }
+
+  .vem-e-ve{
+    background-image: url("/assets/vem-e-ve.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+  }
+
+  .ebd{
+    background-image: url("/assets/EBD.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+  }
+  

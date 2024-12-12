@@ -1,0 +1,46 @@
+<div class="container text-center mt-4">
+    <h3>Lecionário Ano C</h3>
+
+
+    <span>
+        <h6>
+            Selecione os versiculos
+        </h6>
+    </span>
+
+<!--Using items input-->
+<ng-select [items]="biblia" 
+           bindLabel="nome" 
+           bindValue="id" 
+           [(ngModel)]="livro"
+           (ngModelChange)="selecionarLivro()">
+</ng-select>
+
+
+<ng-select [items]="capitulosDisponiveis" 
+           bindLabel="capitulo + 1" 
+           bindValue="id" 
+           [(ngModel)]="capitulo"
+           (ngModelChange)="selecionarVersiculo()">
+</ng-select>
+
+<ng-select [items]="versiculosDisponiveis" 
+           bindLabel="nome" 
+           bindValue="id" 
+           [(ngModel)]="versiculos"
+           multiple
+           [closeOnSelect]="false"
+           (ngModelChange)="odernarVersiculos()"
+           >
+</ng-select>
+
+<button class="btn btn-primary" (click)="carregar()">Clique aqui</button>
+
+
+@for (texto of textoBiblico; track texto) {
+    <div class="container">
+        {{ texto.verso }} {{texto.texto}}
+    </div>
+  }
+
+  </div>

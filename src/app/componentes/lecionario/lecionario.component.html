@@ -1,0 +1,109 @@
+<!-- <input type="date" class="form-control" [formControl]="dataForm" (change)="selecionarData()" style="width: 70%;"> -->
+<nav class="navbar navbar-light fixed-top bg-light px-2 px-2 d-flex flex-row">
+    <button class="btn btn" style="width: 15%;" (click)="decrementarData()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios_new"></mat-icon>
+    </button>
+    <button class="btn" (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin"
+        style="width: 15rem;">
+        <strong style="color: purple;">
+            {{dataSelecionada}}
+        </strong>
+    </button>
+    <button type="date" class="btn btn" style="width: 15%;" (click)="incrementarData()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios_new"></mat-icon>
+    </button>
+</nav>
+
+
+<ng-template style="width: 70%;" cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger"
+    [cdkConnectedOverlayOpen]="isOpen">
+    <div class="card" style="width: 15rem;">
+        <mat-calendar [selected]="dataSelecionada" (selectedChange)="onSelect($event)"></mat-calendar>
+
+    </div>
+</ng-template>
+
+
+
+<div class="container" style="margin-top: 5rem;">
+
+    @if(lecionario) {
+    <div class="container">
+        <div class="titulo d-flex align-items-center justify-content-center flex-column text-center">
+            <h5>
+                <strong>
+                    Lecionário Anglicano 
+                </strong>
+                <p>Ano C</p>
+            </h5>
+
+        </div>
+
+        <div class="container d-flex justify-content-between flex-column">
+            <!-- <span style="text-align: justify;">
+                {{descricaoLecionario}}
+            </span> 
+            <br> -->
+
+            <strong>
+                {{liturgiaDiariaTitulo}}
+            </strong>
+            <br>
+
+            <ol>
+                @for (lit of this.liturgiaDiaria; track lit){
+                <li>
+                    {{lit}}
+                </li>
+                }
+            </ol>
+
+            <br>
+
+
+            @if (this.lecionario.textos){
+            <strong>
+                {{this.lecionario.descricao ? this.lecionario.descricao : textosBiblicoTitulo}}
+            </strong>
+            <br>
+            @for (texto of this.lecionario.textos; track texto.livro) {
+            <div class="container">
+                -{{ texto.livro }} {{texto.capitulo}} {{texto.versiculos}}
+            </div>
+            }
+            <br>
+            }
+
+
+            <strong>
+                {{oracaoTitulo}}
+            </strong>
+
+            <br>
+
+            <span style="text-align: justify;">
+                {{oracao}}
+            </span>
+
+        </div>
+
+
+        <button matRipple [matRippleColor]="color" class="btn btn-primary" (click)="formatarTexto()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="content_copy"></mat-icon>
+            copiar
+
+        </button>
+    </div>
+
+    } @else {
+        <div class="container d-flex align-items-center justify-content-center" style="width: 100%; height: 70vh;">
+            <output id="loadingStatus">
+                <div class="spinner-border" style="color: purple; width: 7rem; height: 7rem;">
+                    <span class="sr-only"></span>
+                  </div>
+            </output>
+        </div>
+        
+    }
+
+</div>

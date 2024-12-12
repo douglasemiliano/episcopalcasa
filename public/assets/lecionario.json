@@ -1,0 +1,535 @@
+{
+  "advento": {
+    "oracoes": ["Deus Onipotente, concede-nos a graça de rejeitar as obras das trevas e vestir-nos com as armas da luz, durante esta vida mortal, em que teu Filho Jesus Cristo, com grande humildade, veio visitar-nos. Que, no último dia, quando ele vier em sua gloriosa majestade para julgar os vivos e os mortos, possamos ressuscitar para a vida imortal, mediante Jesus Cristo, que vive e reina contigo e com o Espírito Santo, agora e sempre. Amém.", 
+    "Deus Misericordioso, que enviaste teus mensageiros, os profetas, para pregar o arrependimento e preparar o caminho da nossa salvação; concede-nos a graça, para ouvirmos suas advertências e para abandonarmos os nossos pecados, a fim de saudarmos com alegria a vinda de Jesus Cristo, nosso Redentor, o qual vive e reina contigo e com o Espírito Santo, um só Deus, agora e sempre. Amém.", 
+    "Senhor Jesus Cristo que, na tua primeira vinda, enviaste o precursor para preparar o teu caminho, concede à tua Igreja a graça e o poder para converter muitos ao caminho da justiça, a fim de que, na tua segunda vinda em glória, encontres um povo agradável aos teus olhos, ó Tu, que vives e reinas com o Pai e o Espírito Santo, um só Deus, agora e sempre. Amém."],
+    "lecionario": [
+      {
+        "data": "28/11/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 90,
+            "versiculos": []
+          },
+          {
+            "livro": "Neemias",
+            "abreviacao": "Ne",
+            "capitulo": 9,
+            "versiculos": [6, 15]
+          },
+          {
+            "livro": "1 Tessalonicenses",
+            "abreviacao": "1Ts",
+            "capitulo": 5,
+            "versiculos": [1, 11]
+          }
+        ]
+      },
+      {
+        "data": "29/11/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 25,
+            "versiculos": [1, 10]
+          },
+          {
+            "livro": "Neemias",
+            "abreviacao": "Ne",
+            "capitulo": 9,
+            "versiculos": [16, 25]
+          },
+          {
+            "livro": "1 Tessalonicenses",
+            "abreviacao": "1Ts",
+            "capitulo": 5,
+            "versiculos": [12, 22]
+          }
+        ]
+      },
+      {
+        "data": "30/11/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 25,
+            "versiculos": [1, 10]
+          },
+          {
+            "livro": "Neemias",
+            "abreviacao": "Ne",
+            "capitulo": 9,
+            "versiculos": [26, 31]
+          },
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 21,
+            "versiculos": [20, 24]
+          }
+        ]
+      },
+      {
+        "data": "01/12/2024",
+        "descricao": "Primeiro Domingo do Advento",
+        "textos": []
+      },
+      {
+        "data": "02/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 90,
+            "versiculos": []
+          },
+          {
+            "livro": "Números",
+            "abreviacao": "Nm",
+            "capitulo": 17,
+            "versiculos": [1, 11]
+          },
+          {
+            "livro": "2 Pedro",
+            "abreviacao": "2Pe",
+            "capitulo": 3,
+            "versiculos": [1, 18]
+          }
+        ]
+      },
+      {
+        "data": "03/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 90,
+            "versiculos": []
+          },
+          {
+            "livro": "2 Samuel",
+            "abreviacao": "2Sm",
+            "capitulo": 7,
+            "versiculos": [18, 29]
+          },
+          {
+            "livro": "Apocalipse",
+            "abreviacao": "Ap",
+            "capitulo": 22,
+            "versiculos": [12, 16]
+          }
+        ]
+      },
+      {
+        "data": "04/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 90,
+            "versiculos": []
+          },
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 1,
+            "versiculos": [24, 31]
+          },
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 11,
+            "versiculos": [29, 32]
+          }
+        ]
+      },
+      {
+        "data": "05/12/2024",
+        "textos": [
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 1,
+            "versiculos": [68, 79]
+          },
+          {
+            "livro": "Malaquias",
+            "abreviacao": "Ml",
+            "capitulo": 3,
+            "versiculos": [5, 12]
+          },
+          {
+            "livro": "Filipenses",
+            "abreviacao": "Fp",
+            "capitulo": 1,
+            "versiculos": [12, 18]
+          }
+        ]
+      },
+      {
+        "data": "06/12/2024",
+        "textos": [
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 1,
+            "versiculos": [68, 79]
+          },
+          {
+            "livro": "Malaquias",
+            "abreviacao": "Ml",
+            "capitulo": 3,
+            "versiculos": [13, 18]
+          },
+          {
+            "livro": "Filipenses",
+            "abreviacao": "Fp",
+            "capitulo": 1,
+            "versiculos": [18, 26]
+          }
+        ]
+      },
+      {
+        "data": "07/12/2024",
+        "textos": [
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 1,
+            "versiculos": [68, 79]
+          },
+          {
+            "livro": "Malaquias",
+            "abreviacao": "Ml",
+            "capitulo": 4,
+            "versiculos": [1, 6]
+          },
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 9,
+            "versiculos": [1, 6]
+          }
+        ]
+      },
+      {
+        "data": "08/12/2024",
+        "descricao": "Segundo Domingo do Advento",
+        "textos": []
+      },
+      {
+        "data": "09/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 126,
+            "versiculos": []
+          },
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 40,
+            "versiculos": [1, 11]
+          },
+          {
+            "livro": "Romanos",
+            "abreviacao": "Rm",
+            "capitulo": 8,
+            "versiculos": [22, 25]
+          }
+        ]
+      },
+      {
+        "data": "10/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 126,
+            "versiculos": []
+          },
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 19,
+            "versiculos": [18, 25]
+          },
+          {
+            "livro": "2 Pedro",
+            "abreviacao": "2Pe",
+            "capitulo": 1,
+            "versiculos": [2, 15]
+          }
+        ]
+      },
+      {
+        "data": "11/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 126,
+            "versiculos": []
+          },
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 35,
+            "versiculos": [3, 7]
+          },
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 7,
+            "versiculos": [18, 30]
+          }
+        ]
+      },
+      {
+        "data": "12/12/2024",
+        "textos": [
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 12,
+            "versiculos": [2, 6]
+          },
+          {
+            "livro": "Amós",
+            "abreviacao": "Am",
+            "capitulo": 6,
+            "versiculos": [1, 8]
+          },
+          {
+            "livro": "2 Coríntios",
+            "abreviacao": "2Co",
+            "capitulo": 8,
+            "versiculos": [1, 15]
+          }
+        ]
+      },
+      {
+        "data": "13/12/2024",
+        "textos": [
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 12,
+            "versiculos": [2, 6]
+          },
+          {
+            "livro": "Amós",
+            "abreviacao": "Am",
+            "capitulo": 8,
+            "versiculos": [4, 12]
+          },
+          {
+            "livro": "2 Coríntios",
+            "abreviacao": "2Co",
+            "capitulo": 9,
+            "versiculos": [1, 15]
+          }
+        ]
+      },
+      {
+        "data": "14/12/2024",
+        "textos": [
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 12,
+            "versiculos": [2, 6]
+          },
+          {
+            "livro": "Amós",
+            "abreviacao": "Am",
+            "capitulo": 9,
+            "versiculos": [8, 15]
+          },
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 1,
+            "versiculos": [56, 66]
+          }
+        ]
+      },
+      {
+        "data": "15/12/2024",
+        "descricao": "Terceiro Domingo do Advento",
+        "textos": []
+      },
+      {
+        "data": "16/12/2024",
+        "textos": [
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 11,
+            "versiculos": [1, 9]
+          },
+          {
+            "livro": "Números",
+            "abreviacao": "Nm",
+            "capitulo": 16,
+            "versiculos": [1, 19]
+          },
+          {
+            "livro": "Hebreus",
+            "abreviacao": "Hb",
+            "capitulo": 13,
+            "versiculos": [7, 17]
+          }
+        ]
+      },
+      {
+        "data": "17/12/2024",
+        "textos": [
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 11,
+            "versiculos": [1, 9]
+          },
+          {
+            "livro": "Números",
+            "abreviacao": "Nm",
+            "capitulo": 16,
+            "versiculos": [20, 35]
+          },
+          {
+            "livro": "Atos",
+            "abreviacao": "At",
+            "capitulo": 28,
+            "versiculos": [23, 31]
+          }
+        ]
+      },
+      {
+        "data": "18/12/2024",
+        "textos": [
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 11,
+            "versiculos": [1, 9]
+          },
+          {
+            "livro": "Miqueias",
+            "abreviacao": "Mq",
+            "capitulo": 4,
+            "versiculos": [8, 13]
+          },
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 7,
+            "versiculos": [31, 35]
+          }
+        ]
+      },
+      {
+        "data": "19/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 80,
+            "versiculos": [1, 7]
+          },
+          {
+            "livro": "Jeremias",
+            "abreviacao": "Jr",
+            "capitulo": 31,
+            "versiculos": [31, 34]
+          },
+          {
+            "livro": "Hebreus",
+            "abreviacao": "Hb",
+            "capitulo": 10,
+            "versiculos": [10, 18]
+          }
+        ]
+      },
+      {
+        "data": "20/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 80,
+            "versiculos": [1, 7]
+          },
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 42,
+            "versiculos": [10, 18]
+          },
+          {
+            "livro": "Hebreus",
+            "abreviacao": "Hb",
+            "capitulo": 10,
+            "versiculos": [32, 39]
+          }
+        ]
+      },
+      {
+        "data": "21/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 80,
+            "versiculos": [1, 7]
+          },
+          {
+            "livro": "Isaías",
+            "abreviacao": "Is",
+            "capitulo": 66,
+            "versiculos": [7, 11]
+          },
+          {
+            "livro": "Lucas",
+            "abreviacao": "Lc",
+            "capitulo": 13,
+            "versiculos": [31, 35]
+          }
+        ]
+      },
+      {
+        "data": "22/12/2024",
+        "descricao": "Quarto Domingo do Advento",
+        "textos": []
+      },
+      {
+        "data": "23/12/2024",
+        "textos": [
+          {
+            "livro": "Salmo",
+            "abreviacao": "Sl",
+            "capitulo": 113,
+            "versiculos": []
+          },
+          {
+            "livro": "Gênesis",
+            "abreviacao": "Gn",
+            "capitulo": 25,
+            "versiculos": [19, 28]
+          },
+          {
+            "livro": "Colossenses",
+            "abreviacao": "Cl",
+            "capitulo": 1,
+            "versiculos": [15, 20]
+          }
+        ]
+      }
+    ]
+  }
+}
