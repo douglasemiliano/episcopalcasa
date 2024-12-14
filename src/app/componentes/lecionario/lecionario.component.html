@@ -1,13 +1,19 @@
 <!-- <input type="date" class="form-control" [formControl]="dataForm" (change)="selecionarData()" style="width: 70%;"> -->
+ 
 <nav class="navbar navbar-light fixed-top bg-light px-2 px-2 d-flex flex-row">
     <button class="btn btn" style="width: 15%;" (click)="decrementarData()">
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios_new"></mat-icon>
     </button>
-    <button class="btn" (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin"
+    <button class="btn d-flex flex-column justify-content-center align-items-center" (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin"
         style="width: 15rem;">
-        <strong style="color: purple;">
-            {{dataSelecionada}}
+        <strong style="color: purple; font-size: 14pt;">
+            {{dataSelecionada | date}}
         </strong>
+
+        <span style="color: purple; margin-top: -0.5rem;">
+            {{diaDaSemana}}
+        </span>
+
     </button>
     <button type="date" class="btn btn" style="width: 15%;" (click)="incrementarData()">
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios_new"></mat-icon>
@@ -18,7 +24,7 @@
 <ng-template style="width: 70%;" cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger"
     [cdkConnectedOverlayOpen]="isOpen">
     <div class="card" style="width: 15rem;">
-        <mat-calendar [selected]="dataSelecionada" (selectedChange)="onSelect($event)"></mat-calendar>
+        <mat-calendar  [selected]="dataSelecionada" (selectedChange)="onSelect($event)"></mat-calendar>
 
     </div>
 </ng-template>
@@ -34,7 +40,7 @@
                 <strong style="color: purple;">
                     Lecionário Comum Revisado 
                 </strong>
-                <p>Ano C - {{conteudo.tempo}}</p>
+                <p>Ano C - {{conteudo[tempoLiturgico].tempo}}</p>
             </h6>
 
         </div>
@@ -89,7 +95,7 @@
 
 
         <button cdkDragBoundary=".content" matRipple cdkDrag [matRippleColor]="color" class="fab" (click)="formatarTexto()" title="Copiar" (cdkDragStarted)="onDragStart()" (cdkDragEnded)="onDragEnd()">
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="content_copy"></mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="copy_all"></mat-icon>
         </button>
 
     </div>

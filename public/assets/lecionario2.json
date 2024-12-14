@@ -1,15 +1,17 @@
 {
   "ano": "C",
   "conteudo": {
-    "advento" : {
+    "advento": {
       "tempo": "Advento",
-      "oracoes": ["Deus Onipotente, concede-nos a graça de rejeitar as obras das trevas e vestir-nos com as armas da luz, durante esta vida mortal, em que teu Filho Jesus Cristo, com grande humildade, veio visitar-nos. Que, no último dia, quando ele vier em sua gloriosa majestade para julgar os vivos e os mortos, possamos ressuscitar para a vida imortal, mediante Jesus Cristo, que vive e reina contigo e com o Espírito Santo, agora e sempre. Amém.", 
-      "Deus Misericordioso, que enviaste teus mensageiros, os profetas, para pregar o arrependimento e preparar o caminho da nossa salvação; concede-nos a graça, para ouvirmos suas advertências e para abandonarmos os nossos pecados, a fim de saudarmos com alegria a vinda de Jesus Cristo, nosso Redentor, o qual vive e reina contigo e com o Espírito Santo, um só Deus, agora e sempre. Amém.", 
-      "Senhor Jesus Cristo que, na tua primeira vinda, enviaste o precursor para preparar o teu caminho, concede à tua Igreja a graça e o poder para converter muitos ao caminho da justiça, a fim de que, na tua segunda vinda em glória, encontres um povo agradável aos teus olhos, ó Tu, que vives e reinas com o Pai e o Espírito Santo, um só Deus, agora e sempre. Amém.",
-      "Ó Deus Onipotente, purifica a nossa consciência com tua visitação diária, para que o teu Filho Jesus Cristo, na sua vinda em glória, encontre em nós a morada preparada para Si; o qual vive e reina contigo, na unidade do Espírito Santo, um só Deus, agora e sempre. Amém."],
+      "oracoes": [
+        "Deus Onipotente, concede-nos a graça de rejeitar as obras das trevas e vestir-nos com as armas da luz, durante esta vida mortal, em que teu Filho Jesus Cristo, com grande humildade, veio visitar-nos. Que, no último dia, quando ele vier em sua gloriosa majestade para julgar os vivos e os mortos, possamos ressuscitar para a vida imortal, mediante Jesus Cristo, que vive e reina contigo e com o Espírito Santo, agora e sempre. Amém.",
+        "Deus Misericordioso, que enviaste teus mensageiros, os profetas, para pregar o arrependimento e preparar o caminho da nossa salvação; concede-nos a graça, para ouvirmos suas advertências e para abandonarmos os nossos pecados, a fim de saudarmos com alegria a vinda de Jesus Cristo, nosso Redentor, o qual vive e reina contigo e com o Espírito Santo, um só Deus, agora e sempre. Amém.",
+        "Senhor Jesus Cristo que, na tua primeira vinda, enviaste o precursor para preparar o teu caminho, concede à tua Igreja a graça e o poder para converter muitos ao caminho da justiça, a fim de que, na tua segunda vinda em glória, encontres um povo agradável aos teus olhos, ó Tu, que vives e reinas com o Pai e o Espírito Santo, um só Deus, agora e sempre. Amém.",
+        "Ó Deus Onipotente, purifica a nossa consciência com tua visitação diária, para que o teu Filho Jesus Cristo, na sua vinda em glória, encontre em nós a morada preparada para Si; o qual vive e reina contigo, na unidade do Espírito Santo, um só Deus, agora e sempre. Amém."
+      ],
       "lecionario": [
         {
-          "data": "28/11/2024",
+          "data": "2024-11-28",
           "textos": [
             {
               "livro": "Salmo",
@@ -32,7 +34,7 @@
           ]
         },
         {
-          "data": "29/11/2024",
+          "data": "2024-11-29",
           "textos": [
             {
               "livro": "Salmo",
@@ -55,7 +57,7 @@
           ]
         },
         {
-          "data": "30/11/2024",
+          "data": "2024-11-30",
           "textos": [
             {
               "livro": "Salmo",
@@ -78,12 +80,12 @@
           ]
         },
         {
-          "data": "01/12/2024",
+          "data": "2024-12-01",
           "descricao": "Primeiro Domingo do Advento",
           "textos": []
         },
         {
-          "data": "02/12/2024",
+          "data": "2024-12-02",
           "textos": [
             {
               "livro": "Salmo",
@@ -106,7 +108,7 @@
           ]
         },
         {
-          "data": "03/12/2024",
+          "data": "2024-12-03",
           "textos": [
             {
               "livro": "Salmo",
@@ -129,7 +131,7 @@
           ]
         },
         {
-          "data": "04/12/2024",
+          "data": "2024-12-04",
           "textos": [
             {
               "livro": "Salmo",
@@ -152,7 +154,7 @@
           ]
         },
         {
-          "data": "05/12/2024",
+          "data": "2024-12-05",
           "textos": [
             {
               "livro": "Lucas",
@@ -175,7 +177,7 @@
           ]
         },
         {
-          "data": "06/12/2024",
+          "data": "2024-12-06",
           "textos": [
             {
               "livro": "Lucas",
@@ -198,7 +200,7 @@
           ]
         },
         {
-          "data": "07/12/2024",
+          "data": "2024-12-07",
           "textos": [
             {
               "livro": "Lucas",
@@ -221,12 +223,12 @@
           ]
         },
         {
-          "data": "08/12/2024",
+          "data": "2024-12-08",
           "descricao": "Segundo Domingo do Advento",
           "textos": []
         },
         {
-          "data": "09/12/2024",
+          "data": "2024-12-09",
           "textos": [
             {
               "livro": "Salmo",
@@ -249,7 +251,7 @@
           ]
         },
         {
-          "data": "10/12/2024",
+          "data": "2024-12-10",
           "textos": [
             {
               "livro": "Salmo",
@@ -272,7 +274,7 @@
           ]
         },
         {
-          "data": "11/12/2024",
+          "data": "2024-12-11",
           "textos": [
             {
               "livro": "Salmo",
@@ -295,7 +297,7 @@
           ]
         },
         {
-          "data": "12/12/2024",
+          "data": "2024-12-12",
           "textos": [
             {
               "livro": "Isaías",
@@ -318,7 +320,7 @@
           ]
         },
         {
-          "data": "13/12/2024",
+          "data": "2024-12-13",
           "textos": [
             {
               "livro": "Isaías",
@@ -341,7 +343,7 @@
           ]
         },
         {
-          "data": "14/12/2024",
+          "data": "2024-12-14",
           "textos": [
             {
               "livro": "Isaías",
@@ -364,12 +366,12 @@
           ]
         },
         {
-          "data": "15/12/2024",
+          "data": "2024-12-15",
           "descricao": "Terceiro Domingo do Advento",
           "textos": []
         },
         {
-          "data": "16/12/2024",
+          "data": "2024-12-16",
           "textos": [
             {
               "livro": "Isaías",
@@ -392,7 +394,7 @@
           ]
         },
         {
-          "data": "17/12/2024",
+          "data": "2024-12-17",
           "textos": [
             {
               "livro": "Isaías",
@@ -415,7 +417,7 @@
           ]
         },
         {
-          "data": "18/12/2024",
+          "data": "2024-12-18",
           "textos": [
             {
               "livro": "Isaías",
@@ -438,7 +440,7 @@
           ]
         },
         {
-          "data": "19/12/2024",
+          "data": "2024-12-19",
           "textos": [
             {
               "livro": "Salmo",
@@ -461,7 +463,7 @@
           ]
         },
         {
-          "data": "20/12/2024",
+          "data": "2024-12-20",
           "textos": [
             {
               "livro": "Salmo",
@@ -484,7 +486,7 @@
           ]
         },
         {
-          "data": "21/12/2024",
+          "data": "2024-12-21",
           "textos": [
             {
               "livro": "Salmo",
@@ -507,12 +509,12 @@
           ]
         },
         {
-          "data": "22/12/2024",
+          "data": "2024-12-22",
           "descricao": "Quarto Domingo do Advento",
           "textos": []
         },
         {
-          "data": "23/12/2024",
+          "data": "2024-12-23",
           "textos": [
             {
               "livro": "Salmo",
@@ -538,28 +540,34 @@
     },
     "natal": {
       "tempo": "Natal",
-      "oracoes": [],
+      "oracoes": ["Deus Onipotente, que nos deste teu unigênito Filho para que tomasse sobre si a nossa natureza, e nascesse neste tempo de uma Virgem pura; concede que nós, renascidos e feitos teus filhos por adoção e graça, sejamos de dia em dia renovados por teu Santo Espírito; mediante nosso Senhor Jesus Cristo, que vive e reina contigo e com o Espírito Santo, um só Deus, agora e sempre. Amém."],
       "lecionario": [
         {
-          "data": "24/12/2024",
+          "data": "2024-12-24",
           "textos": [
+            {
+              "livro": "Isaías",
+              "abreviacao": "Is",
+              "capitulo": 9,
+              "versiculos": [2, 7]
+            },
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 96,
+              "versiculos": []
+            },
+            {
+              "livro": "Tito",
+              "abreviacao": "Tt",
+              "capitulo": 2,
+              "versiculos": [11, 14]
+            },
             {
               "livro": "Lucas",
               "abreviacao": "Lc",
-              "capitulo": 1,
-              "versiculos": [46,55]
-            },
-            {
-              "livro": "Miqueias",
-              "abreviacao": "Mq",
-              "capitulo": 4,
-              "versiculos": [6, 8]
-            },
-            {
-              "livro": "Efésios",
-              "abreviacao": "Ef",
               "capitulo": 2,
-              "versiculos": [11, 22]
+              "versiculos": [1, 20]
             }
           ]
         }

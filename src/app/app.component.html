@@ -1,6 +1,6 @@
 <!-- Image and text -->
 <nav class="navbar navbar-light fixed-top bg-light px-2 d-flex justify-content-center" aria-label="top">
-    <a class="navbar-brand d-flex align-items-center" (click)="goToHome()">
+    <a class="navbar-brand d-flex align-items-center justify-content-center" (click)="goToHome()">
       <img src="assets/logo.png"  height="40" class="d-inline-block align-top" alt="">
     </a>
   </nav>
@@ -31,7 +31,7 @@
       </span>
     </button>
   
-    <button class="btn btn d-flex flex-column justify-content-center align-items-center"  style="width: 33%;" (click)="setActiveButton('home2')" (click)="goToHome()">
+    <button class="btn btn d-flex flex-column justify-content-center align-items-center"  disabled style="width: 33%;" (click)="setActiveButton('home2')" (click)="goToHome()">
       <mat-icon [class.material-icons]="activeButton === 'home2'" [class.material-icons-outlined]="activeButton !== 'home2'" [style.color]="activeButton === 'home2' ? 'purple' : 'black'">
         home
       </mat-icon>

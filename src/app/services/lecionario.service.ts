@@ -11,6 +11,6 @@ export class LecionarioService {
   private httpClient = inject(HttpClient);
 
   getLecionario(): Observable<LecionarioComum>{
-    return this.httpClient.get<LecionarioComum>('assets/lecionario.json') as Observable<LecionarioComum>;
+    return this.httpClient.get<LecionarioComum>('assets/lecionario2.json') as Observable<LecionarioComum>;
     }
 }

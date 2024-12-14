@@ -2,9 +2,10 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import { registerLocaleData } from '@angular/common';
-import localeBr from '@angular/common/locales/br'
+import localePt from '@angular/common/locales/pt';
 
-registerLocaleData(localeBr, 'br');
+// Registra os dados de localização para pt-BR
+registerLocaleData(localePt);
 
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));

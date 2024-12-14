@@ -19,13 +19,20 @@ export class Texto {
   }
 
   export class ConteudoLecionario{
-    tempo: string
-    lecionario: Lecionario[];
-    oracoes: string[];
+    advento: Modulo;
+    natal: Modulo;
+    epifania: Modulo;
+    comum: Modulo;
   }
 
   export class LecionarioComum {
     ano: string;
     conteudo: ConteudoLecionario
+  }
+
+  export class Modulo {
+    tempo: string
+    lecionario: Lecionario[];
+    oracoes: string[];
   }
   

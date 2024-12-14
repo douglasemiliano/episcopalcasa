@@ -16,3 +16,9 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
   }
+
+  .disabled-date {
+    pointer-events: none;  /* Impede clique nas datas */
+    color: #ccc;  /* Cor para mostrar que a data está desabilitada */
+  }
+  
