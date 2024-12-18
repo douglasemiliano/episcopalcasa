@@ -1,45 +1,27 @@
-<!-- Image and text -->
 <nav class="navbar navbar-light fixed-top bg-light px-2 d-flex justify-content-center" aria-label="top">
-    <a class="navbar-brand d-flex align-items-center justify-content-center" (click)="goToHome()">
-      <img src="assets/logo.png"  height="40" class="d-inline-block align-top" alt="">
-    </a>
-  </nav>
-  <div class="container" style="padding-bottom: 5rem;">
-    <router-outlet></router-outlet>
-  </div>
+  <a class="navbar-brand d-flex align-items-center justify-content-center" (click)="goToHome()">
+    <img src="assets/logo.png" height="40" class="d-inline-block align-top" alt="">
+  </a>
+</nav>
 
-  <nav class="navbar fixed-bottom bg-light px-2 d-flex flex-row" aria-label="bottom">
-    <button class="btn btn d-flex flex-column justify-content-center align-items-center" style="width: 33%;" (click)="setActiveButton('home')" (click)="goToHome()">
-      <mat-icon [class.material-icons]="activeButton === 'home'"[class.material-icons-outlined]="activeButton !== 'home'" [style.color]="activeButton === 'home' ? 'purple' : 'black'">
-        church
-      </mat-icon>
-      <span style="font-size: smaller;" [style.color]="activeButton === 'home' ? 'purple' : 'black'">
-        <strong>
-          Início
-        </strong>
-      </span>
-    </button>
-  
-    <button class="btn btn d-flex flex-column justify-content-center align-items-center" style="width: 33%;"(click)="setActiveButton('lecionario')" (click)="goToLecionario()">
-      <mat-icon [class.material-icons]="activeButton === 'lecionario'" [class.material-icons-outlined]="activeButton !== 'lecionario'" [style.color]="activeButton === 'lecionario' ? 'purple' : 'black'">
-        article
-      </mat-icon>
-      <span style="font-size: smaller;" [style.color]="activeButton === 'lecionario' ? 'purple' : 'black'">
-        <strong>
-          Lecionário
-        </strong>
-      </span>
-    </button>
-  
-    <button class="btn btn d-flex flex-column justify-content-center align-items-center"  disabled style="width: 33%;" (click)="setActiveButton('home2')" (click)="goToHome()">
-      <mat-icon [class.material-icons]="activeButton === 'home2'" [class.material-icons-outlined]="activeButton !== 'home2'" [style.color]="activeButton === 'home2' ? 'purple' : 'black'">
-        home
-      </mat-icon>
-      <span style="font-size: smaller;" [style.color]="activeButton === 'home2' ? 'purple' : 'black'">
-        <strong>
-          Teste
-        </strong>
-      </span>
-    </button>
-  </nav>
-  
+<div class="container" style="padding-bottom: 15rem;">
+  <div [@routeAnimations]="prepareRoute(routerOutlet)">
+    <router-outlet #routerOutlet="outlet"></router-outlet>
+  </div>
+</div>
+
+<nav class="navbar fixed-bottom bg-light px-2 d-flex flex-row" aria-label="bottom">
+  <button class="btn btn d-flex flex-column justify-content-center align-items-center" style="width: 33%;" (click)="setActiveButton('home'); goToHome()">
+    <mat-icon [class.material-icons]="activeButton === 'home'" [class.material-icons-outlined]="activeButton !== 'home'" [style.color]="activeButton === 'home' ? 'purple' : 'black'">
+      church
+    </mat-icon>
+    <span style="font-size: smaller;" [style.color]="activeButton === 'home' ? 'purple' : 'black'"><strong>Início</strong></span>
+  </button>
+
+  <button class="btn btn d-flex flex-column justify-content-center align-items-center" style="width: 33%;" (click)="setActiveButton('lecionario'); goToLecionario()">
+    <mat-icon [class.material-icons]="activeButton === 'lecionario'" [class.material-icons-outlined]="activeButton !== 'lecionario'" [style.color]="activeButton === 'lecionario' ? 'purple' : 'black'">
+      article
+    </mat-icon>
+    <span style="font-size: smaller;" [style.color]="activeButton === 'lecionario' ? 'purple' : 'black'"><strong>Lecionário</strong></span>
+  </button>
+</nav>

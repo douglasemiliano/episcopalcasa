@@ -4,8 +4,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { LecionarioComponent } from './componentes/lecionario/lecionario.component';
 
 export const routes: Routes = [
-    { path: "", redirectTo: "/home", pathMatch: "full" },
-    { path: "home", component: HomeComponent},
-    { path: "lecionario", component: LecionarioComponent},
-    { path: "biblia", component: BibliaComponent}
-];
+    { path: 'home', component: HomeComponent, data: { animation: 'home' } },
+    { path: 'lecionario', component: LecionarioComponent, data: { animation: 'lecionario' } },
+    { path: '', redirectTo: '/home', pathMatch: 'full' }
+  ];

@@ -220,8 +220,8 @@ getWeekOfNatal(dateStr: string): number {
     \n${this.liturgiaDiaria.map((item, index) => `${index+1}. ${item}`).join("\n")}
     \n${this.negritoWhatsapp(this.textosBiblicoTitulo)}
     \n${this.lecionario!.textos.map((texto: any) => `${texto.livro} ${texto.capitulo}:${texto.versiculos}`).join("\n")}
-    \n${this.negritoWhatsapp(this.oracaoTitulo)}
-    \n${this.oracao}
+    \n${this.negritoWhatsapp(this.lecionario?.oracaoTitulo ? this.lecionario.oracaoTitulo : this.oracaoTitulo)}
+    \n${this.lecionario?.oracao ? this.lecionario.oracao : this.oracao}
     `;
     
     

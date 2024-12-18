@@ -1,32 +1,46 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
+import { trigger, transition, style, animate, query, group } from '@angular/animations';
 import { MatIconModule } from '@angular/material/icon';
-import { Router, RouterOutlet } from '@angular/router';
+import { routeAnimations } from './animation';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,MatIconModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  standalone: true
+  styleUrls: ['./app.component.scss'],
+  imports: [MatIconModule, RouterOutlet],
+  animations: [routeAnimations],
+  standalone: true,
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'casa';
-  activeButton: string = 'home'; 
+  activeButton: string = 'home';
 
-  constructor(private router: Router){
+  constructor(private router: Router) {}
 
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.activeButton = this.router.url.replace('/', '');
+      }
+    });
   }
 
-  goToLecionario(){
-    this.router.navigateByUrl("lecionario")
+  goToLecionario() {
+    this.router.navigate(['lecionario']);
   }
 
-  goToHome(){
-    this.router.navigateByUrl("/home")
+  goToHome() {
+    this.router.navigate(['home']);
   }
 
   setActiveButton(button: string): void {
-    this.activeButton = button; // Atualiza o botão ativo
+    this.activeButton = button;
   }
 
+  prepareRoute(outlet: any) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  }
+  
 }
+

@@ -16,6 +16,8 @@ export class Texto {
     data: string; // Data no formato DD/MM/AAAA
     descricao?: string; // Descrição opcional (ex.: "Terceiro Domingo do Advento")
     textos: Texto[]; // Lista de textos associados à data
+    oracaoTitulo: string;
+    oracao: string;
   }
 
   export class ConteudoLecionario{

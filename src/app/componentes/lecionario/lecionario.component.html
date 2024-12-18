@@ -74,7 +74,7 @@
             <br>
             @for (texto of this.lecionario.textos; track texto.livro) {
             <div class="container">
-                -{{ texto.livro }} {{texto.capitulo}} {{texto.versiculos}}
+                -{{ texto.livro }} {{texto.capitulo}}: {{texto.versiculos.join('-')}}
             </div>
             }
             <br>
@@ -82,20 +82,20 @@
 
 
             <strong>
-                {{oracaoTitulo}}
+                {{this.lecionario.oracaoTitulo ? this.lecionario.oracaoTitulo : oracaoTitulo}}
             </strong>
 
             <br>
 
             <span style="text-align: justify;">
-                {{oracao}}
+                {{this.lecionario.oracao ? this.lecionario.oracao : oracao}}
             </span>
 
         </div>
 
 
         <button cdkDragBoundary=".content" matRipple cdkDrag [matRippleColor]="color" class="fab" (click)="formatarTexto()" title="Copiar" (cdkDragStarted)="onDragStart()" (cdkDragEnded)="onDragEnd()">
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="copy_all"></mat-icon>
+            <img src="assets/copy.svg" alt="">
         </button>
 
     </div>

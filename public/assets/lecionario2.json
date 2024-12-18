@@ -540,16 +540,21 @@
     },
     "natal": {
       "tempo": "Natal",
-      "oracoes": ["Deus Onipotente, que nos deste teu unigênito Filho para que tomasse sobre si a nossa natureza, e nascesse neste tempo de uma Virgem pura; concede que nós, renascidos e feitos teus filhos por adoção e graça, sejamos de dia em dia renovados por teu Santo Espírito; mediante nosso Senhor Jesus Cristo, que vive e reina contigo e com o Espírito Santo, um só Deus, agora e sempre. Amém."],
+      "oracoes": [
+        "Onipotente Deus, que derramaste sobre nós a nova luz do teu Verbo feito carne; concede que essa mesma luz, acesa em nossos corações, brilhe em nossas vidas; por Jesus Cristo, nosso Senhor, que vive e reina contigo, na unidade do Espírito Santo, um só Deus, agora e sempre. Amém.",
+        "Onipotente Deus, que derramaste sobre nós a nova luz do teu Verbo feito carne; concede que essa mesma luz, acesa em nossos corações, brilhe em nossas vidas; por Jesus Cristo, nosso Senhor, que vive e reina contigo, na unidade do Espírito Santo, um só Deus, agora e sempre. Amém.",
+        "Ó Deus, nosso Pai, deste-nos um modelo de vida na sagrada Família de Nazaré: concede que imitemos as suas virtudes em nossas famílias vivendo agora no espírito da caridade, para que, reunidos depois na tua casa, ali gozemos as alegrias eternas. Mediante nosso Senhor Jesus Cristo, teu Filho, na unidade do Espírito Santo. Amém.",
+        "Ó Deus, nosso Pai, deste-nos um modelo de vida na sagrada Família de Nazaré: concede que imitemos as suas virtudes em nossas famílias vivendo agora no espírito da caridade, para que, reunidos depois na tua casa, ali gozemos as alegrias eternas. Mediante nosso Senhor Jesus Cristo, teu Filho, na unidade do Espírito Santo. Amém."],
       "lecionario": [
         {
           "data": "2024-12-24",
+          "descricao": "Natividade de nosso Senhor Jesus Cristo - Próprio I",
           "textos": [
             {
               "livro": "Isaías",
               "abreviacao": "Is",
               "capitulo": 9,
-              "versiculos": [2, 7]
+              "versiculos": [2,7]
             },
             {
               "livro": "Salmo",
@@ -568,6 +573,262 @@
               "abreviacao": "Lc",
               "capitulo": 2,
               "versiculos": [1, 20]
+            }
+          ]
+        },
+        {
+          "data": "2024-12-25",
+          "descricao": "Natividade de nosso Senhor Jesus Cristo - Próprio II & III",
+          "oracaoTitulo": "Oração para o dia de Natal",
+          "oracao": "Deus Onipotente, que nos deste teu unigênito Filho para que tomasse sobre si a nossa natureza, e nascesse neste tempo de uma Virgem pura; concede que nós, renascidos e feitos teus filhos por adoção e graça, sejamos de dia em dia renovados por teu Santo Espírito; mediante nosso Senhor Jesus Cristo, que vive e reina contigo e com o Espírito Santo, um só Deus, agora e sempre. Amém.",
+          "textos": [
+            {
+              "livro": "Isaías",
+              "abreviacao": "Is",
+              "capitulo": 62,
+              "versiculos": [6, 12]
+            },
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 97,
+              "versiculos": []
+            },
+            {
+              "livro": "Tito",
+              "abreviacao": "Tt",
+              "capitulo": 3,
+              "versiculos": [4, 7]
+            },
+            {
+              "livro": "Lucas",
+              "abreviacao": "Lc",
+              "capitulo": 2,
+              "versiculos": [1, 20]
+            },
+            {
+              "livro": "Isaías",
+              "abreviacao": "Is",
+              "capitulo": 52,
+              "versiculos": [7,10]
+            },
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 98,
+              "versiculos": []
+            },
+            {
+              "livro": "Hebreu",
+              "abreviacao": "Hb",
+              "capitulo": 1,
+              "versiculos": [1, 12]
+            },
+            {
+              "livro": "João",
+              "abreviacao": "Jo",
+              "capitulo": 1,
+              "versiculos": [1, 14]
+            }
+          ]
+        },
+        {
+          "data": "2024-12-26",
+          "textos": [
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 148,
+              "versiculos": []
+            },
+            {
+              "livro": "2º Livro de Crônicas",
+              "abreviacao": "2 Cr",
+              "capitulo": 24,
+              "versiculos": [17,24]
+            },
+            {
+              "livro": "Atos",
+              "abreviacao": "At",
+              "capitulo": 6,
+              "versiculos": [1,7]
+            },
+            {
+              "livro": "Atos",
+              "abreviacao": "At",
+              "capitulo": 7,
+              "versiculos": [51,60]
+            }
+          ]
+        },
+        {
+          "data": "2024-12-27",
+          "textos": [
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 148,
+              "versiculos": []
+            },
+            {
+              "livro": "Provérbios",
+              "abreviacao": "Pv",
+              "capitulo": 8,
+              "versiculos": [32,36]
+            },
+            {
+              "livro": "João",
+              "abreviacao": "Jo",
+              "capitulo": 21,
+              "versiculos": [19,24]
+            }
+          ]
+        },
+        {
+          "data": "2024-12-28",
+          "textos": [
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 148,
+              "versiculos": []
+            },
+            {
+              "livro": "Isaías",
+              "abreviacao": "Is",
+              "capitulo": 54,
+              "versiculos": [1,13]
+            },
+            {
+              "livro": "Apocalipse",
+              "abreviacao": "Ap",
+              "capitulo": 21,
+              "versiculos": [1,7]
+            }
+          ]
+        },
+        {
+          "data": "2024-12-29",
+          "textos": [
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 147,
+              "versiculos": [12,20]
+            },
+            {
+              "livro": "1º Livro de Crônicas",
+              "abreviacao": "1 Cr",
+              "capitulo": 28,
+              "versiculos": [1,10]
+            },
+            {
+              "livro": "1ª Epístola aos Coríntios",
+              "abreviacao": "1 Co",
+              "capitulo": 3,
+              "versiculos": [10,16]
+            }
+          ]
+        },
+        {
+          "data": "2024-12-30",
+          "textos": [
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 147,
+              "versiculos": [12,20]
+            },
+            {
+              "livro": "2º Livro de Crônicas",
+              "abreviacao": "2 Cr",
+              "capitulo": 1,
+              "versiculos": [7,13]
+            },
+            {
+              "livro": "Marcos",
+              "abreviacao": "Mc",
+              "capitulo": 13,
+              "versiculos": [32,37]
+            }
+          ]
+        },
+        {
+          "data": "2024-12-31",
+          "textos": [
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 147,
+              "versiculos": [12,20]
+            },
+            {
+              "livro": "1º Livro de Reis",
+              "abreviacao": "1 Rs",
+              "capitulo": 3,
+              "versiculos": [5,14]
+            },
+            {
+              "livro": "João",
+              "abreviacao": "Jo",
+              "capitulo": 8,
+              "versiculos": [12,19]
+            }
+          ]
+        },
+        {
+          "data": "2025-01-01",
+          "descricao": "Santo Nome de nosso Senhor Jesus Cristo",
+          "oracaoTitulo": "Oração para dia do Santo Nome e Circuncisão de nosso Senhor Jesus Cristo",
+          "oracao": "Ó Deus, que maravilhosamente criaste e ainda mais maravilhosamente restauraste a dignidade da natureza humana; concede que participemos da vida divinal de teu Filho Jesus Cristo, que se humilhou para participar de nossa humanidade, o qual vive e reina contigo e com o Espírito Santo, um só Deus, agora e sempre. Amém.",
+        "textos": [
+            {
+              "livro": "Isaías",
+              "abreviacao": "Is",
+              "capitulo": 62,
+              "versiculos": [6, 12]
+            },
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 97,
+              "versiculos": []
+            },
+            {
+              "livro": "Tito",
+              "abreviacao": "Tt",
+              "capitulo": 3,
+              "versiculos": [4, 7]
+            },
+            {
+              "livro": "Lucas",
+              "abreviacao": "Lc",
+              "capitulo": 2,
+              "versiculos": [1, 20]
+            },
+            {
+              "livro": "Isaías",
+              "abreviacao": "Is",
+              "capitulo": 52,
+              "versiculos": [7,10]
+            },
+            {
+              "livro": "Salmo",
+              "abreviacao": "Sl",
+              "capitulo": 98,
+              "versiculos": []
+            },
+            {
+              "livro": "Hebreu",
+              "abreviacao": "Hb",
+              "capitulo": 1,
+              "versiculos": [1, 12]
+            },
+            {
+              "livro": "João",
+              "abreviacao": "Jo",
+              "capitulo": 1,
+              "versiculos": [1, 14]
             }
           ]
         }
