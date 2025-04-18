@@ -1,6 +1,6 @@
 .fab {
     position: fixed;
-    bottom: 5rem;  /* Distância do fundo da tela */
+    bottom: 3rem;  /* Distância do fundo da tela */
     right: 1rem;   /* Distância da lateral direita da tela */
     width: 60px;
     height: 60px;
@@ -22,3 +22,7 @@
     color: #ccc;  /* Cor para mostrar que a data está desabilitada */
   }
   
+:host {
+  display: block;
+  font-family: 'Arial', sans-serif;
+}

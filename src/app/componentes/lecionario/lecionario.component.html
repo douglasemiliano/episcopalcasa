@@ -1,61 +1,65 @@
-<!-- <input type="date" class="form-control" [formControl]="dataForm" (change)="selecionarData()" style="width: 70%;"> -->
- 
-<nav class="navbar navbar-light fixed-top bg-light px-2 px-2 d-flex flex-row">
-    <button class="btn btn" style="width: 15%;" (click)="decrementarData()">
+<nav class="navbar navbar-light fixed-top bg-light d-flex flex-row">
+    <button class="btn btn" style="width: 15%;" (click)="incrementarDecrementarDia(false)" (click)="getConteudoLecionario()">
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios_new"></mat-icon>
     </button>
     <button class="btn d-flex flex-column justify-content-center align-items-center" (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin"
         style="width: 15rem;">
         <strong style="color: purple; font-size: 14pt;">
-            {{dataSelecionada | date}}
+            {{dataUnica | date}}
         </strong>
 
-        <span style="color: purple; margin-top: -0.5rem;">
-            {{diaDaSemana}}
+        <span style="color: purple; margin-top: -0.5rem; text-wrap: nowrap;">
+            {{conteudoLecionario ? conteudoLecionario.nome : "Lecionario"}}
         </span>
 
     </button>
-    <button type="date" class="btn btn" style="width: 15%;" (click)="incrementarData()">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios_new"></mat-icon>
+    <button type="date" class="btn btn" style="width: 15%;" (click)="incrementarDecrementarDia(true)" (click)="getConteudoLecionario()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios_new" ></mat-icon>
     </button>
 </nav>
-
 
 <ng-template style="width: 70%;" cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger"
     [cdkConnectedOverlayOpen]="isOpen">
     <div class="card" style="width: 15rem;">
-        <mat-calendar  [selected]="dataSelecionada" (selectedChange)="onSelect($event)"></mat-calendar>
-
+        <mat-calendar  [selected]="dataUnica" (selectedChange)="onSelect($event)"></mat-calendar>
     </div>
 </ng-template>
 
-
-
-<div class="container content" style="margin-top: 5rem;">
-
-    @if(lecionario) {
-    <div class="container">
-        <div class="titulo d-flex align-items-center justify-content-center flex-column text-center">
-            <h6>
-                <strong style="color: purple;">
-                    Lecionário Comum Revisado 
-                </strong>
-                <p>Ano C - {{conteudo[tempoLiturgico].tempo}}</p>
-            </h6>
-
-        </div>
-
+@if(conteudoLecionario){
+    <div class="p-2 mt-5">
+        <!-- <mat-form-field appearance="fill" class="mr-4" style="width: 100%;">
+          <mat-label>Data específica</mat-label>
+          <input matInput [matDatepicker]="picker1" [(ngModel)]="dataUnica" (ngModelChange)="mudouData()">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field> -->
+        <h6 class="mb-4 text-center mt-4" style="color: purple; font-size: 16pt;">
+            <strong>
+                Lecionário Comum Revisado        
+            </strong>
+    
+            <p>Ano C - {{conteudoLecionario.tempo}}</p>
+    
+        </h6>
+      
+        <!-- <button mat-raised-button color="primary"  (click)="filtrarPorData()">Buscar</button> -->
+      
+        <hr class="my-6" />
+      
+    
+    
+        
         <div class="container d-flex justify-content-between flex-column">
             <!-- <span style="text-align: justify;">
                 {{descricaoLecionario}}
             </span> 
             <br> -->
-
+    
             <strong>
                 {{liturgiaDiariaTitulo}}
             </strong>
             <br>
-
+    
             <ol>
                 @for (lit of this.liturgiaDiaria; track lit){
                 <li>
@@ -63,52 +67,49 @@
                 </li>
                 }
             </ol>
-
+    
             <br>
-
-
-            @if (this.lecionario.textos){
+    
+    
+            @if (this.conteudoLecionario.leituras){
             <strong>
-                {{this.lecionario.descricao ? this.lecionario.descricao : textosBiblicoTitulo}}
+                Textos Bíblicos:
             </strong>
             <br>
-            @for (texto of this.lecionario.textos; track texto.livro) {
+            @for (texto of this.conteudoLecionario.leituras; let index = $index; track index) {
             <div class="container">
-                -{{ texto.livro }} {{texto.capitulo}}: {{texto.versiculos.join('-')}}
+                -{{ primeiraLetraMaiuscula(texto.tipo) }}: {{texto.texto}}
             </div>
             }
             <br>
             }
-
-
+    
             <strong>
-                {{this.lecionario.oracaoTitulo ? this.lecionario.oracaoTitulo : oracaoTitulo}}
+                Orações para o dia:
             </strong>
-
             <br>
-
-            <span style="text-align: justify;">
-                {{this.lecionario.oracao ? this.lecionario.oracao : oracao}}
-            </span>
-
-        </div>
-
-
-        <button cdkDragBoundary=".content" matRipple cdkDrag [matRippleColor]="color" class="fab" (click)="formatarTexto()" title="Copiar" (cdkDragStarted)="onDragStart()" (cdkDragEnded)="onDragEnd()">
-            <img src="assets/copy.svg" alt="">
-        </button>
-
-    </div>
-
-    } @else {
-        <div class="container d-flex align-items-center justify-content-center" style="width: 100%; height: 70vh;">
-            <output id="loadingStatus">
-                <div class="spinner-border" style="color: purple; width: 7rem; height: 7rem;">
-                    <span class="sr-only"></span>
-                  </div>
-            </output>
+            <ol>
+                @for (oracao of this.conteudoLecionario.oracoes; let index = $index; track index) {
+                <li>
+                    {{oracao}}
+                </li>
+                }
+            </ol>
+    
         </div>
         
-    }
+    </div>
+} @else {
+    <div class="p-2 mt-5">
+        <h6 class="mb-4 text-center mt-4" style="color: purple; font-size: 16pt;">
+            <strong>
+                Nenhum conteúdo encontrado para a data selecionada!
+            </strong>    
+        </h6>
+    </div>
+}
 
-</div>
+
+    <button matRipple class="fab" title="Copiar" (click)="formatarTexto()">
+        <img src="assets/copy.svg" alt="">
+    </button>

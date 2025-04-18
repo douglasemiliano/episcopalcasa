@@ -1,16 +1,32 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { LecionarioComum } from '../model/Advento.model';
+import { inject, Injectable, signal, WritableSignal } from '@angular/core';
+import { LecionarioMock } from '../mocks/lecionario.mock';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LecionarioService {
 
-  private httpClient = inject(HttpClient);
+  public dataUnica: WritableSignal<Date> = signal<Date>(new Date());
 
-  getLecionario(): Observable<LecionarioComum>{
-    return this.httpClient.get<LecionarioComum>('assets/lecionario2.json') as Observable<LecionarioComum>;
-    }
+  getConteudoPorData(date: Date) {
+    if (!this.dataUnica) return;
+
+    const data = this.formatDate(date);
+
+    const ano = 'C'; // você pode tornar isso dinâmico se quiser
+    const lecionario = LecionarioMock.find(l => l.ano === ano);
+
+    const diaEncontrado = lecionario!.conteudo.find(item => item.dia === data);
+
+    console.log(diaEncontrado);
+
+    return diaEncontrado!;
+  }
+
+  private formatDate(date: Date): string {
+    return date.toISOString().split('T')[0]; // retorna yyyy-mm-dd
+  }
+
+
 }

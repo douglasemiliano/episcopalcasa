@@ -12,29 +12,24 @@ export class Texto {
     }
   }
   
-  export class Lecionario {
-    data: string; // Data no formato DD/MM/AAAA
-    descricao?: string; // Descrição opcional (ex.: "Terceiro Domingo do Advento")
-    textos: Texto[]; // Lista de textos associados à data
-    oracaoTitulo: string;
-    oracao: string;
+  export  interface Leitura {
+    primeira: string;
+    interlecional: string;
+    segunda: string;
+    evangelho: string;
   }
-
-  export class ConteudoLecionario{
-    advento: Modulo;
-    natal: Modulo;
-    epifania: Modulo;
-    comum: Modulo;
-  }
-
-  export class LecionarioComum {
+  
+  export  interface Lecionario {
     ano: string;
-    conteudo: ConteudoLecionario
+    conteudo: Conteudo[];
+  
   }
-
-  export class Modulo {
-    tempo: string
-    lecionario: Lecionario[];
+  
+  export  interface Conteudo {
+    dia: string; // formato ISO: YYYY-MM-DD
+    nome: string;
     oracoes: string[];
+    leituras: any[];
+    tempo?: string;
   }
   
