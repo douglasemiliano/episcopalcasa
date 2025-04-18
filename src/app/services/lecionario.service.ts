@@ -12,7 +12,12 @@ export class LecionarioService {
   getConteudoPorData(date: Date) {
     if (!this.dataUnica) return;
 
-    const data = this.formatDate(date);
+    let data: string | Date = date;
+
+    if(typeof date === 'object') {
+       data = this.formatDate(date);
+    }
+
 
     const ano = 'C'; // você pode tornar isso dinâmico se quiser
     const lecionario = LecionarioMock.find(l => l.ano === ano);
